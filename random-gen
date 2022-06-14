@@ -1,0 +1,15 @@
+
+import random
+import string
+
+lower = string.ascii_lowercase
+upper = string.ascii_uppercase
+number = '0123456789'
+symbols = '!@#$%^&*()_-+={[}]:;<,>.?/'
+noombers = 0
+
+join = str(lower + upper + number + symbols)
+long = input('How long should password be? ')
+length = long
+password = "".join(random.sample(join, int(length)))
+print(password)
